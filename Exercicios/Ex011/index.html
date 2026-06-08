@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="APMatheus.ico" type="image/x-icon">
+    <title>Medias</title>
+</head>
+<body>
+    <h1>Imagens Flexíveis</h1>
+    <hr>
+    <p>Olá! tente abrir esta página em vários tipos de dispositivos ou apenas aumente e diminua seu navegador.</p>
+
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Audio</h1>
+    <hr>
+    <p>Nós também podemos adicionar audios para tocar no nosso site.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Cosmic - Lish Grooves.mp3" type="audio/mpeg">
+        <p>infelizmente seu navegador não reproduz o audio, mas você pode baixa-lo clicando <a href="midia/Cosmic - Lish Grooves.mp3">aqui</a></p>
+    </audio>
+</body>
+</html>

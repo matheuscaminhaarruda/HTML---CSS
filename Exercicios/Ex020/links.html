@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="APMatheus.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        a{
+            color: green;
+            text-decoration: none;
+        }
+        a:visited{
+            color: rgb(71, 133, 71);
+        }
+        a:active{
+            color: red;
+        }
+        .especial::after{
+            content: '«';
+            color: rgb(139, 3, 139);
+        }
+        .especial::before{
+            content: '»'; 
+            color: rgb(139, 3, 139);
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elements</h1>
+    <hr>
+    <ul>
+        <li class="especial"><a href="http://www.youtube.com" target="_blank" rel="external">Youtube</a></li>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/desafios/modulo-01/d009" target="_blank">GitHub</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-11-aula-4-formatos-de-video-para-seu-site/" target="_blank">Cursoemvideo</a></li>
+    </ul>
+</body>
+</html>

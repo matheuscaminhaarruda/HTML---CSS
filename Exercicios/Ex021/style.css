@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 186, 168);
+    margin: 0px;
+    height: ;
+}
+
+header{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(192, 132, 113);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-weight: normal;
+    font-style: italic;
+
+    width: 600px;
+    margin: auto;
+
+    box-shadow: 5px 5px 10px rgba(117, 81, 70, 0.486);
+    border-radius: 5px;
+    border: 3px solid rgb(95, 65, 56);
+}
+
+header > nav {
+    background-color: rgba(168, 86, 86, 0.788);
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgb(95, 65, 56);
+}
+
+header > nav > a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+header > nav > a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: rgba(168, 245, 219, 0.829);
+    padding: 10px 0px 10px 0px;
+    text-align: justify;
+    margin: auto;
+    width: 600px;
+}
+
+main > h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-align: center;
+    font-style: italic;
+    color: rgb(69, 100, 90);
+}
+
+section#sessao{
+    font-size: larger;
+    background-color: rgba(97, 141, 126, 0.637);
+    text-align: center;
+    color: rgb(102, 70, 60);
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+}
+
+p{
+    text-indent: 20px;
+    padding: 20px;
+}
+
+aside{
+    background-color: rgba(97, 141, 126, 0.637);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-decoration: underline;
+    text-align: center;
+
+    width: 200px;
+    padding: 2px;
+    margin-left: 20px;
+}
+
+article{
+    display: none;
+}
+
+main > section > nav{
+    background-color: white;
+    margin-top: 5px;
+    padding: 2px;
+}
+
+span{
+    padding-right: 15px;
+    padding-left: 25px;
+    text-align: center;
+}
+
+span:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+span#artigo01:hover > article {
+    display: block;
+}
+
+span#artigo02:hover > article {
+    display: block;
+}
+
+span#artigo03:hover > article {
+    display: block;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+p#criador{
+    margin: 0px;
+    padding: 5px;
+}
