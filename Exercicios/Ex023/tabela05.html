@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="APMatheus.ico" type="image/x-icon">
+    <title>Agrupando Colunas</title>
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.2em;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px; 
+        }
+
+        .colnome{
+            background-color: aquamarine;
+        }
+        .colidade{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="colnome">
+            <col class="colidade" span="3">
+        </colgroup>
+        <caption>Lista</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João</td>
+                <td>25</td>
+                <td>Homem</td>
+                <td>Engenheiro</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>27</td>
+                <td>Homem</td>
+                <td>uber</td>
+            </tr>
+            <tr>
+                <td>Flávio</td>
+                <td>20</td>
+                <td>Homem</td>
+                <td>Cozinheiro</td>
+            </tr>
+            <tr>
+                <td>Tereza</td>
+                <td>35</td>
+                <td>Mulher</td>
+                <td>Garçonete</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>25</td>
+                <td>Mulher</td>
+                <td>Modelo</td>
+            </tr>
+            <tr>
+                <td>Tiago</td>
+                <td>20</td>
+                <td>Homem</td>
+                <td>Jogador</td>
+            </tr>
+            <tr>
+                <td>Matheus</td>
+                <td>31</td>
+                <td>Homem</td>
+                <td>Programador</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
