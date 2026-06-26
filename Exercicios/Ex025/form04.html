@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="APMatheus.ico" type="image/x-icon">
+    <title>Formulários</title>
+    <style>
+        legend{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 1.4em;
+            font-style: italic;
+        }
+
+        fieldset{
+            background-color: rgba(211, 211, 211, 0.596);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.315);
+            text-align: center;
+        }
+
+        .botoes{
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.37);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário Teste</h1>
+    <form action="cadastro.php" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" required pattern="^\(\d{2}\)\d{4}-\d{4}$" placeholder="(xx)xxxx-xxxx" autocomplete="tel">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar" class="botoes">
+            <input type="reset" value="Limpar" class="botoes">
+        </p>
+    </form>
+</body>
+</html>
