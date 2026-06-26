@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="APMatheus.ico" type="image/x-icon">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+                <optgroup label="Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraiba</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+
+        </p>
+        
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Cozinheiro</option>
+                <option>Piloto</option>
+                <option>Uber</option>
+                <option>Administrador</option>
+                <option>Jogador de Futebol</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Menssagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+    </form>
+</body>
+</html>
