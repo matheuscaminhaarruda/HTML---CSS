@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="APMatheus.ico" type="image/x-icon">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulários output</h1>
+    <form action="cadastro.php">
+        <p>
+            <label for="inu1">Número 1:</label>
+            <input type="number" name="nu1" id="inu1" required min="0" oninput="isoma.innerHTML = Number(inu1.value) + Number(inu2.value)">
+        </p>
+        <p>
+            <label for="inu2">Número 2:</label>
+            <input type="number" name="nu2" id="inu2" required min="0" oninput="isoma.innerHTML = Number(inu1.value) + Number(inu2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
